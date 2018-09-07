@@ -266,11 +266,15 @@ call s:h("jsModuleBraces",      { "fg": s:white, "format": "bold" })
 
                                  
 " Html
-call s:h("htmlTag",             { "fg": s:white })
-call s:h("htmlEndTag",          { "fg": s:white })
+call s:h("htmlTag",             { "fg": s:white, "format": "bold" })
+call s:h("htmlTagN",            { "fg": s:pink })
+call s:h("htmlEndTag",          { "fg": s:white, "format": "bold" })
 call s:h("htmlTagName",         { "fg": s:pink })
 call s:h("htmlArg",             { "fg": s:green })
 call s:h("htmlSpecialChar",     { "fg": s:purple })
+call s:h("litHtmlRegion",       { "fg": s:white, "format": "bold" })
+
+
 
 " Xml
 call s:h("xmlTag",              { "fg": s:pink })
@@ -287,9 +291,21 @@ call s:h("cssPseudoClassId",    { "fg": s:purple })
 call s:h("cssClassName",        { "fg": s:green })
 call s:h("cssValueLength",      { "fg": s:purple })
 call s:h("cssCommonAttr",       { "fg": s:pink })
-call s:h("cssBraces" ,          { "fg": s:white })
 call s:h("cssClassNameDot",     { "fg": s:pink })
 call s:h("cssURL",              { "fg": s:orange, "format": "underline,italic" })
+call s:h("cssStyle",           { "fg": s:pink })
+call s:h("cssBraces",          { "fg": s:white, "format": "bold" })
+call s:h("cssAttrRegion",          { "fg": s:white, "format": "bold" })
+call s:h("cssProp",      { "fg": s:white, "format": "bold" })
+call s:h("cssFunctionName",      { "fg": s:white, "format": "bold" })
+call s:h("cssFunctionComma",      { "fg": s:pink, "format": "bold" })
+call s:h("cssNoise",      { "fg": s:white, "format": "bold" })
+call s:h("cssBoxAttr",      { "fg": s:white, "format": "bold" })
+call s:h("cssFontAttr",      { "fg": s:white, "format": "bold" })
+call s:h("cssImportant",      { "fg": s:grey })
+call s:h("cssAttrComma",      { "fg": s:pink, "format": "bold" })
+call s:h("cssBorderAttr",      { "fg": s:white, "format": "bold" })
+
 
 " LESS
 call s:h("lessVariable",        { "fg": s:green })
